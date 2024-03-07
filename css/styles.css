@@ -7,6 +7,7 @@
   --navy-color: #1e1823;
   --transparent-color: rgba(255, 255, 255, 0.7);
   --heavy-transparent-color: rgba(255, 255, 255, 0.5);
+  --strongest-transparent-color: rgba(255, 255, 255, 0.1);
 }
 
 /* general styles */
@@ -1360,6 +1361,9 @@ p {
 .footer-break {
   width: 96%;
   margin-bottom: 24px;
+  background-color: var(--strongest-transparent-color);
+  height: 2px;
+  border: none;
 }
 
 .navlinkfooter {
