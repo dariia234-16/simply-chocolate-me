@@ -288,7 +288,7 @@
           <!-- button and text -->
             <div class="text-and-button-wrapper">
               <p class="top-sellers-text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-              <button class="top-sellers-button">Buy now</button>
+              <button class="top-sellers-button" top-sellers-open>Buy now</button>
             </div>
            </div>
         </div>
@@ -401,7 +401,36 @@
         </a>
       </div>
     </div>
+    <!-- top sellers modal -->
+    <div class="top-sellers-modal-container is-hidden" modal-top-sellers>
+      <div class="top-sellers-modal">
+        <!-- close button -->
+        <button class="top-sellers-close-button" top-sellers-close>
+          <svg class="top-sellers-close-icon" width="18" height="18">
+            <use href="./images/icons.svg#exit-icon"></use>
+          </svg>
+        </button>
+        <!-- header -->
+        <h2 class="top-sellers-modal-header"><span class="part-of-top-sellers-modal-header">Buy </span>Now</h2>
+        <!-- list of chocolate options -->
+        <ul class="top-sellers-chocolate-list list">
+          <li class="top-sellers-chocolate-choice">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <button class="top-sellers-chocolate-item-button">100 g</button>
+          </li>
+          <li class="top-sellers-chocolate-choice">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <button class="top-sellers-chocolate-item-button">200 g</button>
+          </li>
+          <li class="top-sellers-chocolate-choice">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <button class="top-sellers-chocolate-item-button">300 g</button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- javascript -->
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/top-sellers.js"></script>
   </body>
 </html>
