@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--app css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Simply Chocolate</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="header-container container">
+        <!-- logo -->
+        <a class="logo link" href="./index.html"
+          ><span class="logo-italic">Simply </span>Chocolate</a
+        >
+        <!-- navigation -->
+        <nav class="main-navigation">
+          <ul class="navigation-list list">
+            <li class="navigation-item">
+              <a class="navigation-link link" href="./index.html">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="#howitsmade">How it's made?</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="#ourproducts">Our Products</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="#topsellers">Top sellers</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="#footer">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- social media icons -->
+        <div class="social-media-hero">
+          <a class="social-media-link link" href="">
+            <svg class="social-media-icon-hero" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="social-media-link link" href="">
+            <svg class="social-media-icon-hero" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- hamburger menu -->
+        <div class="hamburger-menu">
+          <button class="hamburger-menu-button" js-open-menu>
+            <svg class="hamburger-menu-icon" width="22" height="22">
+              <use href="./images/icons.svg#hamburger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <!-- hero image -->
+      <section class="hero-section">
+        <div class="hero-container container">
+          <div class="hero-text-and-button-wrapper">
+            <!-- hero text -->
+            <h1 class="hero-image-text">
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
+            </h1>
+            <!-- hero buttons -->
+            <div class="hero-buttons">
+              <button class="hero-image-button hero-button-buy-now">
+                Buy now
+              </button>
+              <button class="hero-image-button hero-button-secondary" href="#howitsmade">
+                How it's made
+              </button>
+            </div>
+          </div>
+          <!-- scroll down -->
+          <div class="scroll-down">
+            <span class="scroll-down-text">scroll down</span>
+            <div class="scroll-down-button">
+              <a class="scroll-down-link" href="#footer">
+                <svg width="22" height="22" class="scroll-down-button-icon">
+                  <use href="./images/icons.svg#arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section two: benefits -->
+      <section class="benefits-section">
+        <div class="benefits-container container">
+          <ul class="benefits-list list">
+            <!-- first benefit -->
+            <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate-icon"></use>
+                </svg>
+              </div>
+              <h2 class="benefits-header">Unsurpassed taste</h2>
+              <p class="benefits-description">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
+            </li>
+            <hr class="benefits-break">
+            <!-- second benefit -->
+            <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#dollar-icon"></use>
+                </svg>
+              </div>
+              <h2 class="benefits-header">Affordable price</h2>
+              <p class="benefits-description">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
+            </li>
+            <hr class="benefits-break">
+            <!-- third benefit -->
+            <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon-icon"></use>
+                </svg>
+              </div>
+              <h2 class="benefits-header">Own production</h2>
+              <p class="benefits-description">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </section>
+      <!-- section three: ingredients -->
+      <section class="ingredients-section">
+        <!-- ingredients header and description -->
+        <div class="ingredients-container container">
+          <h1 class="ingredients-header">It all adds up to one exceptional <span class="part-of-ingredients-header">taste</span> sensation</h1>
+          <p class="ingredients-main-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
+        </div>
+        <!-- list of ingredient cards -->
+        <ul class="ingredient-list list">
+          <!-- first ingredient:chocolate -->
+          <li class="ingredient-card-container">
+              <!-- front of the card -->
+              <div class="ingredient-card-front ingredient-card-front-one milkchocolate">
+                <img class="ingredient-image" src="./images/milkchocolate.png" width="206" height="160">
+                <h3 class="ingredient-title milkchocolate">Milk chocolate</h3>
+              </div>
+              <!-- back of the card -->
+              <div class="ingredient-card-back">
+              <h3 class="ingredient-title-back">Milk chocolate</h3>
+                <button class="card-backside-button type">Chocolate</button>
+                <button class="card-backside-button generic">Benefits</button>
+                <p class="ingredient-description">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+              </div>
+          </li>
+          <!-- second ingredient: milk -->
+          <li class="ingredient-card-container">
+            <!-- front of the card -->
+            <div class="ingredient-card-front ingredient-card-front-two milk">
+              <img class="ingredient-image" src="./images/milk.png" width="206" height="160">
+              <h3 class="ingredient-title milk">Milk</h3>
+            </div>
+            <!-- back of the card -->
+            <div class="ingredient-card-back">
+              <h3 class="ingredient-title-back">Milk</h3>
+              <button class="card-backside-button type">Milk</button>
+              <button class="card-backside-button generic">Benefits</button>
+              <p class="ingredient-description">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains</p>
+            </div>
+          </li>
+          <!-- third ingredient : nuts -->
+          <li class="ingredient-card-container">
+            <!-- front of the card -->
+            <div class="ingredient-card-front ingredient-card-front-three nuts">
+              <img class="ingredient-image" src="./images/nuts.png" width="206" height="160">
+              <h3 class="ingredient-title nuts">Nuts</h3>
+            </div>
+            <!-- back of the card -->
+            <div class="ingredient-card-back">
+              <h3 class="ingredient-title-back">Nuts</h3>
+               <button class="card-backside-button type">Nuts</button>
+              <button class="card-backside-button generic">Benefits</button>
+              <p class="ingredient-description">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. </p>
+            </div>
+          </li>
+          <!-- fourth ingredient : semi sweet chocolate-->
+          <li class="ingredient-card-container">
+            <!-- front of the card -->
+            <div class="ingredient-card-front  ingredient-card-front-four semisweetchocolate">
+              <img class="ingredient-image" src="./images/semisweetchocolate.png" width="206" height="160">
+              <h3 class="ingredient-title semisweetchocolate">Semi sweet chocolate</h3>
+            </div>
+            <!-- back of the card -->
+            <div class="ingredient-card-back">
+              <h3 class="ingredient-title-back">Semi sweet chocolate</h3>
+              <button class="card-backside-button type">Sweet Chocolate</button>
+              <button class="card-backside-button generic">Benefits</button>
+              <p class="ingredient-description">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- section four: how it's made -->
+      <section class="making-of-section" id="howitsmade">
+        <div class="making-of-container container">
+          <h2 class="making-of-header">
+            How it's <span class="part-of-making-of-header">made</span> ?
+          </h2>
+          <div class="making-of-wrapper">
+            <!-- video -->
+              <video
+                poster="./images/pastrychef.jpg"
+                width="600"
+                height="400"
+                class="making-of-video"
+                controls>
+                  <source
+                    src="./images/chocolatevideo.mp4.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the <code>video</code> element.
+              </video>
+            
+            <!--how-to list -->
+            <div class="how-to-list-card">
+              <p class="how-to-list-text">Try  our chocolates today and discover the perfect balance of flavor</p>
+              <ul class="how-to-list">
+                <li class="how-to-list-item">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                <li class="how-to-list-item">At the same time, prepare a water bath. Melt the butter on i</li>
+                <li class="how-to-list-item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+                <li class="how-to-list-item">Heat the mixture over low heat, letting it barely boil</li>
+                <li class="how-to-list-item">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+              </ul>
+           </div>
+         </div>
+        </div>
+      </section>
+      <!-- fifth section: our products -->
+      <section class="our-products-section" id="ourproducts">
+        <!-- header -->
+        <div class="our-products-container container">
+          <h2 class="our-products-header">Our <span class="part-of-products-header">Products</span></h2>
+        </div>
+        <!-- swiper of products -->
+      </section>
+      <!-- section six: top sellers -->
+      <section class="top-sellers-section" id="topsellers">
+        <div class="top-sellers-container container">
+           <h2 class="top-sellers-header"><span class="part-of-products-header">Top</span> Sellers</h2>
+           <div class="top-sellers-wrapper">
+            <!-- photos list -->
+            <ul class="top-sellers-list list">
+              <li class="top-sellers-list-item">
+                <img src="./images/firstchoco.jpg" class="top-sellers-image top-sellers-img-one" width="368" height="464">
+              </li>
+              <li class="top-sellers-paragraph-mobile">
+                <p class="top-sellers-text-mobile">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+              </li>
+              <li class="top-sellers-list-item">
+                <img src="./images/secondchoco.jpg" class="top-sellers-image top-sellers-img-two" width="368" height="464">
+              </li>
+              <li class="top-sellers-list-item3">
+                <img src="./images/thirdchoco.jpg" class="top-sellers-image" width="368" height="464">
+              </li>
+            </ul>
+          <!-- button and text -->
+            <div class="text-and-button-wrapper">
+              <p class="top-sellers-text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+              <button class="top-sellers-button">Buy now</button>
+            </div>
+           </div>
+        </div>
+      </section>
+      <!-- section seven: reviews -->
+      <section class="reviews-section">
+        <div class="reviews-container container">
+          <h2 class="top-sellers-header"><span class="part-of-products-header">Chocolate</span> is loved</h2>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container container">
+        <!-- footer hero -->
+        <div class="footer-hero" id="chocolateisloved">
+          <h2 class="footer-hero-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+          <p class="footer-hero-description">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+          <button class="footer-hero-button">Subscribe</button>
+        </div>
+        <!-- footer contacts -->
+        <div class="footer-contacts container">
+          <h2 class="footer-contacts-header"><span class="part-of-ingredients-header">Chocolate</span> a delicious cure for a bad day</h2>
+          <div class="contact-us-and-social-media">
+            <!-- contact us  -->
+            <div class="contact-us-container">
+              <span class="contact-us">Contact us</span>
+              <address class="address-footer">
+                <a href="tel:380684439426" class="address-footer-link link">+380 (68) 443-94-26</a>
+                <a href="mailto:simplychoc@gmail.com" class="address-footer-link link">simplychoc@gmail.com</a>
+              </address>
+            </div>
+            <!-- social media icons -->
+            <div class="social-media-hero-mobile">
+              <a class="social-media-link link" href="">
+                <svg class="social-media-icon-hero-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="social-media-link link" href="">
+                <svg class="social-media-icon-hero-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- footer navigation -->
+        <hr class="footer-break">
+        <nav class="main-navigation main-navigation-footer container">
+          <ul class="navigation-list footer-navigation-list list">
+            <li class="navigation-item navitemfooter">
+              <a class="navigation-link navlinkfooter link" href="./index.html">Home</a>
+            </li>
+            <li class="navigation-item navitemfooter">
+              <a class="navigation-link navlinkfooter link" href="#howitsmade">How it's made?</a>
+            </li>
+            <li class="navigation-item navitemfooter">
+              <a class="navigation-link navlinkfooter link" href="#ourproducts">Our Products</a>
+            </li>
+            <li class="navigation-item navitemfooter">
+              <a class="navigation-link navlinkfooter link" href="#topsellers">Top sellers</a>
+            </li>
+            <li class="navigation-item navitemfooter">
+              <a class="navigation-link navlinkfooter link" href="#footer">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- mobile menu -->
+    <div class="mobile-menu is-hidden" js-menu-container>
+      <!-- close button -->
+      <button class="menu-close-button" js-close-menu>
+        <svg class="menu-close-icon" width="28" height="28">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+      <!-- mobile navigation -->
+      <ul class="navigation-list-mobile list">
+        <li class="navigation-item-mobile">
+          <a class="navigation-link-mobile link home-link" href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li class="navigation-item-mobile">
+          <a class="navigation-link-mobile link" href="#howitsmade">How it's made?</a>
+        </li>
+        <li class="navigation-item-mobile">
+          <a class="navigation-link-mobile link" href="#ourproducts">Our Products</a>
+        </li>
+        <li class="navigation-item-mobile">
+          <a class="navigation-link-mobile link" href="#topsellers">Top sellers</a>
+        </li>
+        <li class="navigation-item-mobile">
+          <a class="navigation-link-mobile link" href="#footer">Chocolate is loved</a>
+        </li>
+      </ul>
+      <!-- social media navigation mobile -->
+      <div class="social-media-hero-mobile">
+        <a class="social-media-link link" href="">
+          <svg class="social-media-icon-hero-mobile" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a class="social-media-link link" href="">
+          <svg class="social-media-icon-hero-mobile" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
