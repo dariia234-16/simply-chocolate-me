@@ -1673,7 +1673,7 @@ p {
 
 @media screen and (width < 768px) {
   .top-sellers-modal {
-    width: 400px;
+    max-width: 400px;
   }
 
   .top-sellers-chocolate-list {
@@ -1681,27 +1681,108 @@ p {
   }
 
   .top-sellers-chocolate-choice {
-    width: 100px;
-    height: 110px;
+    max-width: 100px;
+    max-height: 110px;
   }
 
   .top-sellers-chocolate-image {
-    height: 50px;
+    max-height: 50px;
   }
 
   .form-input {
-    width: 350px;
+    max-width: 350px;
   }
 
   .form-input-name {
-    width: 162px;
+    max-width: 162px;
   }
 
   .form-input-surname {
-    width: 162px;
+    max-width: 162px;
   }
 
   .form-comment {
-    width: 350px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (width < 420px) {
+  .top-sellers-modal {
+    width: 280px;
+    height: 520px;
+  }
+
+  .top-sellers-close-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .top-sellers-close-button {
+    top: 10px;
+    right: 10px;
+  }
+
+  .top-sellers-modal-header {
+    margin-top: 150px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .top-sellers-chocolate-list {
+    gap: 8px;
+  }
+
+  .top-sellers-chocolate-choice {
+    max-width: 50px;
+    max-height: 60px;
+  }
+
+  .top-sellers-chocolate-image {
+    max-height: 40px;
+    max-width: 40px;
+    margin-bottom: -10px;
+  }
+
+  .top-sellers-chocolate-item-button {
+    padding: 2px 4px;
+    font-size: 8px;
+  }
+
+  .form-label {
+    font-size: 11px;
+  }
+
+  .form-input {
+    max-width: 220px;
+    padding: 2px 4px;
+    padding-left: 10px;
+  }
+
+  .form-input-name {
+    max-width: 105px;
+    margin-right: 3px;
+  }
+
+  .form-input-surname {
+    max-width: 105px;
+  }
+
+  .form-input-phone {
+    padding-left: 80px;
+  }
+
+  .country-prefix {
+    left: 17%;
+    padding-left: 0px;
+  }
+
+  .form-comment {
+    max-width: 220px;
+    max-height: 50px;
+  }
+
+  .form-submit-button {
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }
