@@ -309,7 +309,7 @@
         <div class="footer-hero" id="chocolateisloved">
           <h2 class="footer-hero-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
           <p class="footer-hero-description">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
-          <button class="footer-hero-button">Subscribe</button>
+          <button class="footer-hero-button" data-subscribe-open>Subscribe</button>
         </div>
         <!-- footer contacts -->
         <div class="footer-contacts container">
@@ -528,9 +528,33 @@
         </form> 
       </div>
     </div>
+    <!-- subscribe modal -->
+    <div class="subscribe-modal-container is-hidden" data-modal-subscribe>
+      <!--hero -->
+      <div class="subscribe-modal">
+        <div class="subscribe-modal-hero">
+          <button class="subscribe-button-close" data-subscribe-close>
+            <svg class="subscribe-button-icon" width="20" height="20">
+              <use href="./images/icons.svg#exit-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- header -->
+        <h2 class="subscribe-modal-header">Explore our <span class="part-of-subscribe-modal-header">new chocolate</span></h2>
+        <!-- form -->
+        <form class="subscribe-modal-form">
+          <!-- email -->
+          <label class="subscribe-form-label" for="subscribe-user-email">Email</label>
+          <input class="subscribe-form-input" id="subscribe-user-email" name="subscribe-user-email" placeholder="Enter your email">
+          <!-- button -->
+          <button class="subscribe-form-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
     <!-- javascript -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/top-sellers.js"></script>
     <script src="./js/reviews.js"></script>
+    <script src="./js/subscribe.js"></script>
   </body>
 </html>
