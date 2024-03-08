@@ -186,12 +186,11 @@ p {
 .hero-button-buy-now {
   background-color: var(--brand-color);
   margin-right: 14px;
-  transition-property: background-color, color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-.hero-button-buy-now:hover {
+.hero-button-buy-now:hover,
+.hero-button-buy-now:focus {
   background-color: var(--light-yellow-color);
   color: var(--brand-color);
 }
@@ -199,12 +198,11 @@ p {
 .hero-button-secondary {
   background-color: transparent;
   border: 2px solid var(--white-color);
-  transition-property: background-color, color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-.hero-button-secondary:hover {
+.hero-button-secondary:hover,
+.hero-button-secondary:focus {
   background-color: var(--white-color);
   border: 2px solid var(--brand-color);
   color: var(--black-color);
@@ -221,15 +219,18 @@ p {
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.scroll-down:hover .scroll-down-text {
+.scroll-down:hover .scroll-down-text,
+.scroll-down:focus .scroll-down-text {
   color: var(--brand-color);
 }
 
-.scroll-down:hover .scroll-down-button-icon {
+.scroll-down:hover .scroll-down-button-icon,
+.scroll-down:focus-within .scroll-down-button-icon {
   fill: var(--white-color);
 }
 
-.scroll-down:hover .scroll-down-button {
+.scroll-down:hover .scroll-down-button,
+.scroll-down:focus .scroll-down-button {
   background-color: var(--brand-color);
 }
 
@@ -263,6 +264,10 @@ p {
 @media screen and (768px <= width < 1158px) {
   .main-navigation {
     display: none;
+  }
+
+  .main-navigation-footer {
+    display: block;
   }
 
   .social-media-hero {
@@ -1196,6 +1201,36 @@ p {
   padding-bottom: 142px;
 }
 
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.reviews-button {
+  border: 1px solid var(--brand-color);
+  border-radius: 100px;
+  color: var(--black-color);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  background-color: transparent;
+  padding: 14px 40px;
+  cursor: pointer;
+  max-width: 222px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
+
 /* footer styles */
 
 .footer-section {
@@ -1453,6 +1488,8 @@ p {
   top: 20px;
   right: 20px;
   cursor: pointer;
+  font-family: var(--brand-font);
+  font-weight: 500;
 }
 
 .top-sellers-close-icon {
@@ -1807,7 +1844,7 @@ p {
   height: 628px;
   background-color: var(--white-color);
   border-radius: 15px;
-  padding: 15px 20px;
+  padding: 15px 42px;
 }
 
 .reviews-button-close {
@@ -1831,9 +1868,137 @@ p {
   line-height: 28px; /* 116.667% */
   letter-spacing: -0.72px;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 24px;
 }
 
 .part-of-review-modal-header {
   color: var(--brand-color);
+}
+
+.reviews-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.reviews-form-label {
+  display: none;
+}
+
+.reviews-form-input {
+  width: 436px;
+  height: 66px;
+  border-radius: 13px;
+  border: 1.5px solid var(--transparent-black-color);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  padding: 22px 24px;
+  color: var(--brown-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.reviews-form-ukraine-icon {
+  top: 41%;
+}
+
+.country-prefix-subscribe {
+  font-size: 18px;
+  top: 40%;
+  left: 15%;
+}
+
+.reviews-form-input-phone {
+  padding-left: 140px;
+}
+
+.reviews-form-textarea {
+  height: 137px;
+}
+
+.reviews-form-button {
+  border-radius: 100px;
+  background-color: var(--brand-color);
+  border: none;
+  color: var(--white-color);
+  font-family: var(--brand-font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.reviews-form-button:hover,
+.reviews-form-button:focus {
+  background-color: var(--light-yellow-color);
+  color: var(--brand-color);
+}
+
+@media screen and (width < 768px) {
+  .reviews-modal {
+    max-width: 311px;
+    height: 471px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reviews-button-close {
+    top: 12px;
+    right: 10px;
+  }
+
+  .reviews-modal-header {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    width: 255px;
+    margin-top: 25px;
+    padding-left: 5px;
+  }
+
+  .reviews-form {
+    margin-top: 10px;
+  }
+
+  .reviews-form-input {
+    max-width: 263px;
+    padding: 14px 18px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .reviews-form-input-phone {
+    padding-left: 100px;
+  }
+
+  .reviews-form-ukraine-icon {
+    top: 40%;
+    width: 24px;
+    height: 18px;
+  }
+
+  .country-prefix-subscribe {
+    top: 40%;
+    left: 17%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .reviews-form-textarea {
+    height: 91px;
+  }
 }
