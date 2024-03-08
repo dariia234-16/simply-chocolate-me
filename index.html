@@ -297,6 +297,8 @@
       <section class="reviews-section">
         <div class="reviews-container container">
           <h2 class="top-sellers-header"><span class="part-of-products-header">Chocolate</span> is loved</h2>
+          <!-- leave a review button -->
+          <button class="reviews-button" data-reviews-open>Leave a review</button>
         </div>
       </section>
     </main>
@@ -484,8 +486,22 @@
         </form>
       </div>
     </div>
+    <!-- reviews modal -->
+    <div class="reviews-modal-container is-hidden"  data-modal-reviews>
+      <div class="reviews-modal">
+        <!-- close button -->
+        <button class="reviews-button-close" data-reviews-close>
+          <svg class="reviews-button-icon" width="20" height="20">
+            <use href="./images/icons.svg#exit-icon"></use>
+          </svg>
+        </button>
+        <!-- header -->
+        <h2 class="reviews-modal-header">Leave a review about <span class="part-of-review-modal-header">our chocolate</span></h2>
+      </div>
+    </div>
     <!-- javascript -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/top-sellers.js"></script>
+    <script src="./js/reviews.js"></script>
   </body>
 </html>
