@@ -114,9 +114,9 @@
       <!-- section two: benefits -->
       <section class="benefits-section">
         <div class="benefits-container container">
-          <ul class="benefits-list list">
+          <div class="benefits-list list">
             <!-- first benefit -->
-            <li class="benefits-item">
+            <div class="benefits-item">
               <div class="benefits-icon-container">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./images/icons.svg#chocolate-icon"></use>
@@ -124,10 +124,10 @@
               </div>
               <h2 class="benefits-header">Unsurpassed taste</h2>
               <p class="benefits-description">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
-            </li>
+            </div>
             <hr class="benefits-break">
             <!-- second benefit -->
-            <li class="benefits-item">
+            <div class="benefits-item">
               <div class="benefits-icon-container">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./images/icons.svg#dollar-icon"></use>
@@ -135,10 +135,10 @@
               </div>
               <h2 class="benefits-header">Affordable price</h2>
               <p class="benefits-description">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
-            </li>
+            </div>
             <hr class="benefits-break">
             <!-- third benefit -->
-            <li class="benefits-item">
+            <div class="benefits-item">
               <div class="benefits-icon-container">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./images/icons.svg#spoon-icon"></use>
@@ -146,8 +146,8 @@
               </div>
               <h2 class="benefits-header">Own production</h2>
               <p class="benefits-description">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           </ul>
         </div>
       </section>
@@ -415,18 +415,73 @@
         <!-- list of chocolate options -->
         <ul class="top-sellers-chocolate-list list">
           <li class="top-sellers-chocolate-choice">
-            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="./images/smallchoco.png" width="60" height="70">
             <button class="top-sellers-chocolate-item-button">100 g</button>
           </li>
           <li class="top-sellers-chocolate-choice">
-            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="./images/mediumchoco.png" width="60" height="70">
             <button class="top-sellers-chocolate-item-button">200 g</button>
           </li>
           <li class="top-sellers-chocolate-choice">
-            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="">
+            <img class="top-sellers-chocolate-image" alt="trace-of-chocolate" src="./images/largechoco.png" width="60" height="70">
             <button class="top-sellers-chocolate-item-button">300 g</button>
           </li>
         </ul>
+        <!-- modal form -->
+        <form class="modal-form">
+          <!-- personal information-->
+          <div class="form-input-wrapper personal-information-wrapper">
+              <!-- legend -->
+              <h3 class="form-label">Personal information:</h3>
+              <!-- name input -->
+              <label class="form-label form-label-personal" for="user-name">Name:</label> 
+              <input class="form-input form-input-name" id="user-name" type="text" name="user-name" placeholder="Name">
+              <!-- surname input -->
+              <label class="form-label form-label-personal" for="user-surname">Surname:</label>
+              <input class="form-input form-input-surname" id="user-surname" type="text" name="user-surname" placeholder="Surname">
+          </div>
+          <!-- email -->
+          <div class="form-input-wrapper form-input-wrapper-column">
+            <label class="form-label" for="user-email">E-mail</label>
+            <input class="form-input" id="user-email" type="email" name="user-email" placeholder="Enter your e-mail">
+          </div>
+          <!-- telephone -->
+          <div class="form-input-wrapper">
+            <label class="form-label" for="user-phone">Phone Number</label>
+            <!-- input and icon -->
+            <div class="form-icon-input-group">
+             <div class="form-icon-text-group">
+              <!-- ukraine icon -->
+                <svg class="form-ukraine-icon" width="25" height="17">
+                  <use href="./images/icons.svg#ukraine-icon"></use>
+                </svg>
+                <!-- prefix -->
+                <p class="country-prefix">+ 380</p>
+              </div>
+              <!-- telephone input -->
+             <input class="form-input form-input-phone" id="user-phone" type="tel" name="user-phone" placeholder="Phone number">
+            </div>
+          </div>
+          <!-- credit card -->
+          <div class="form-input-wrapper">
+            <label class="form-label" for="user-card">Card number</label>
+            <div class="form-icon-input-group form-icon-input-card-group">
+              <!-- credit card icon -->
+              <svg class="form-card-icon" width="30" height="18">
+                <use href="./images/icons.svg#credit-card-icon"></use>
+              </svg>
+              <!-- credit card input -->
+              <input class="form-input" id="user-card" type="text" name="user-card" placeholder="Enter card">
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="form-textarea-wrapper form-input-wrapper-column">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea class="form-comment" id="user-comment" name="user-comment" placeholder="Enter text"></textarea>
+          </div>
+          <!-- submit button -->
+          <button class="form-submit-button">Submit</button>
+        </form>
       </div>
     </div>
     <!-- javascript -->

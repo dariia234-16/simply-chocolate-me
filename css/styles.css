@@ -2,12 +2,14 @@
   --white-color: #fafafa;
   --brand-font: "Montserrat", sans-serif;
   --black-color: #111111;
+  --transparent-black-color: rgba(17, 17, 17, 0.1);
   --brand-color: #fd9222;
   --light-yellow-color: #fcf1e0;
   --navy-color: #1e1823;
   --transparent-color: rgba(255, 255, 255, 0.7);
   --heavy-transparent-color: rgba(255, 255, 255, 0.5);
   --strongest-transparent-color: rgba(255, 255, 255, 0.1);
+  --brown-color: rgba(64, 64, 64, 0.3);
 }
 
 /* general styles */
@@ -1371,12 +1373,6 @@ p {
 }
 
 @media screen and (width < 768px) {
-  .footer-break {
-    max-width: 704px;
-  }
-}
-
-@media screen and (width < 768px) {
   .footer-contacts {
     display: flex;
     flex-direction: column;
@@ -1413,6 +1409,10 @@ p {
   .navitemfooter {
     width: max-content;
   }
+
+  .footer-break {
+    max-width: 704px;
+  }
 }
 
 /* top sellers modal */
@@ -1429,7 +1429,7 @@ p {
 }
 
 .top-sellers-modal {
-  min-width: 609px;
+  width: 609px;
   height: 700px;
   background-color: var(--white-color);
   position: absolute;
@@ -1440,6 +1440,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .top-sellers-close-button {
@@ -1451,6 +1452,7 @@ p {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
 
 .top-sellers-close-icon {
@@ -1469,7 +1471,7 @@ p {
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -1479,5 +1481,227 @@ p {
 
 .top-sellers-chocolate-list {
   display: flex;
-  gap: 16px;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top-sellers-chocolate-choice {
+  width: 120px;
+  height: 140px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid var(--transparent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.top-sellers-chocolate-item-button {
+  border-radius: 100px;
+  border: 1px solid var(--transparent-black-color);
+  background: var(--white-color);
+  padding: 4px 10px;
+  cursor: pointer;
+  color: var(--black-color);
+  font-family: var(--brand-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* top sellers modal form*/
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-label-personal {
+  display: none;
+}
+
+.form-label {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.form-input {
+  width: 455px;
+  padding-left: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 8px;
+  height: 25px;
+  color: var(--brown-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  border-radius: 13px;
+  border: 1.5px solid var(--transparent-black-color);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+}
+
+.form-input:hover,
+.form-input:focus {
+  outline: 1.5px solid var(--brand-color);
+  border: none;
+}
+
+.form-input-wrapper-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-name {
+  width: 214px;
+  margin-right: 21px;
+}
+
+.form-input-surname {
+  width: 214px;
+}
+
+.form-icon-input-group {
+  position: relative;
+}
+
+.form-ukraine-icon {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.country-prefix {
+  color: black;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  position: absolute;
+  top: 46%;
+  left: 12%;
+  border-right: 1.5px solid var(--transparent-black-color);
+  padding-right: 8px;
+}
+
+.form-input-phone {
+  padding-left: 100px;
+}
+
+.form-icon-input-card-group {
+  position: relative;
+}
+
+.form-card-icon {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.form-comment {
+  width: 458px;
+  padding-left: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 8px;
+  color: var(--brown-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  border-radius: 13px;
+  border: 1.5px solid var(--transparent-black-color);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  height: 80px;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  outline: 1.5px solid var(--brand-color);
+  border: none;
+}
+
+.form-submit-button {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  border-radius: 100px;
+  padding: 8px 30px;
+  border: none;
+  font-family: var(--brand-font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.form-submit-button:hover,
+.form-submit-button:focus {
+  background-color: var(--light-yellow-color);
+  color: var(--brand-color);
+}
+
+@media screen and (768px <= width < 1158px) {
+  .top-sellers-modal {
+    height: 800px;
+    width: 560px;
+  }
+
+  .form-comment {
+    height: 120px;
+    margin-bottom: 25px;
+  }
+
+  .top-sellers-chocolate-list {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (width < 768px) {
+  .top-sellers-modal {
+    width: 400px;
+  }
+
+  .top-sellers-chocolate-list {
+    gap: 22px;
+  }
+
+  .top-sellers-chocolate-choice {
+    width: 100px;
+    height: 110px;
+  }
+
+  .top-sellers-chocolate-image {
+    height: 50px;
+  }
+
+  .form-input {
+    width: 350px;
+  }
+
+  .form-input-name {
+    width: 162px;
+  }
+
+  .form-input-surname {
+    width: 162px;
+  }
+
+  .form-comment {
+    width: 350px;
+  }
 }
