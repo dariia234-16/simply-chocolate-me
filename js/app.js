@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper-1", {
     // Swiper parameters
     slidesPerView: 4,
     spaceBetween: 30,
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
   });
+
   // Initialize Swiper 2
   const swiperTwo = new Swiper(".swiper-2", {
     slidesPerView: 4,

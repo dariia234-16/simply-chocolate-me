@@ -2179,7 +2179,7 @@ p {
 /* swiper our products */
 
 .swiper {
-  max-width: 1140px;
+  width: 1140px;
   z-index: 0;
   min-height: 410px;
 }
