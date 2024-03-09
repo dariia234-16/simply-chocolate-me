@@ -2179,7 +2179,6 @@ p {
 /* swiper our products */
 
 .swiper {
-  width: 1140px;
   z-index: 0;
   min-height: 410px;
 }
@@ -2285,8 +2284,11 @@ p {
 /* reviews slider */
 
 .swiper-2 {
+  width: 1148px;
   z-index: 0;
   margin-bottom: -120px;
+  overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .swiper-slide-reviews {
