@@ -2285,7 +2285,6 @@ p {
 /* reviews slider */
 
 .swiper-2 {
-  width: 1136px;
   z-index: 0;
   margin-bottom: -120px;
 }
@@ -2294,22 +2293,45 @@ p {
   min-width: 360px;
   height: 200px;
   position: relative;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: white;
+  box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+  overflow: visible;
 }
 
 .swiper-slide-reviews::before {
   content: "";
   display: block;
-  background-image: url(../images/firstreview.png);
+  background-image: url(../images/actualfirstreview.png);
   width: 80px;
   height: 80px;
   position: absolute;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10000;
+  overflow: visible;
 }
 
 .swiper-slide-reviews:nth-child(2)::before {
-  background-image: url(../images/secondreview.svg);
+  background-image: url(../images/secondreview.png);
+}
+
+.swiper-slide-reviews:nth-child(3)::before {
+  background-image: url(../images/thirdreview.png);
+}
+
+.swiper-slide-reviews:nth-child(4)::before {
+  background-image: url(../images/firstreview.png);
+}
+
+.swiper-slide-reviews:nth-child(5)::before {
+  background-image: url(../images/fifthreview.png);
+}
+
+.swiper-slide-reviews:nth-child(6)::before {
+  background-image: url(../images/sixthreview.png);
 }
 
 .swiper-pagination-2 {
@@ -2322,8 +2344,7 @@ p {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  line-height: 24px;
-  position: relative; /* 133.333% */
+  line-height: 24px; /* 133.333% */
 }
 
 .review-text {
