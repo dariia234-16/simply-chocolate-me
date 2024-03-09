@@ -1,11 +1,15 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[top-sellers-open]"),
-    closeModalBtn: document.querySelector("[top-sellers-close]"),
-    modal: document.querySelector("[modal-top-sellers]"),
+    openModalBtn: document.querySelector("[data-buynow-open]"),
+    openModalBtnSecondary: document.querySelector(
+      "[data-buynow-open-secondary]"
+    ),
+    closeModalBtn: document.querySelector("[data-buynow-close]"),
+    modal: document.querySelector("[data-modal-buynow]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtnSecondary.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
