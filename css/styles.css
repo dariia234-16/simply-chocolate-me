@@ -2284,22 +2284,22 @@ p {
 /* reviews slider */
 
 .swiper-2 {
-  width: 1148px;
+  max-width: 1148px;
   z-index: 0;
   margin-bottom: -120px;
-  overflow: hidden;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .swiper-slide-reviews {
-  min-width: 360px;
-  height: 200px;
+  max-width: 360px;
+  max-height: 200px;
   position: relative;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: white;
   box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
-  overflow: visible;
+  overflow: hidden;
 }
 
 .swiper-slide-reviews::before {
@@ -2309,11 +2309,12 @@ p {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10000;
+  top: -15px;
+  left: 40%;
+  transform: translateX(-40%);
   overflow: visible;
+  transform: scale(0.6);
+  margin-bottom: 100px;
 }
 
 .swiper-slide-reviews:nth-child(2)::before {
@@ -2358,5 +2359,22 @@ p {
   letter-spacing: -0.28px;
   width: 312px;
   height: 54px;
-  margin-top: 21px;
+  margin-top: 16px;
+}
+
+@media screen and (768px <= width < 1200px) {
+  .swiper-2 {
+    width: 704px;
+  }
+
+  .swiper-slide-reviews {
+    width: 334px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (width < 768px) {
+  .swiper-2 {
+    max-width: 310px;
+  }
 }
